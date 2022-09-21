@@ -26,14 +26,35 @@ Possible computing operations on the reference model of computation:
 * bitwise operations
 * Read and write from a memory address in constant time (Word-RAM)
 
-A CPU takes a constant ammount of time to operate on a constant amount of memory. Operate over a linear ammount of memory takes a linear ammount of time.
+A CPU takes a constant amount of time to operate on a constant amount of memory. Operate over a linear amount of memory takes a linear amount of time.
 
-Data structures are ways of storing non-constant ammount and make operations over them faster.
+Data structures are ways of storing non-constant amount and make operations over them faster.
 
 Strategies to solve a problem.
 
 1. Reduce it to a known algorithm
 2. Design your own (recursive) algorithm
 
+## 2. Data Structures and Dynamic Arrays
+
+### Interface versus  Data Structure
 
 
+Interface (API/ADT)
+* Specification
+* What data can stored
+* Which operations are supported
+
+Data Structure
+* Representation
+* How data is stored
+* Algorithms supporting operations
+
+
+### Sequence
+Care about a particular order
+Operations: build, len, iterate, get, set
+
+
+### Set
+Care a bout element value
