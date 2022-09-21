@@ -5,6 +5,12 @@ Some notes about the [MIT 6.006 Introduction to Algorithms, Spring 2020](https:/
 
 ## 1. Algorithms and Computation
 
+Goals:
+1. Solve computational problems
+2. Prove correctness
+3. Argue efficiency
+4. Communicate solution
+
 ### What is a problem?
 
 Given a set of inputs and a set of outputs. A predicate/statement that allow us to confirm that some relation between input and output holds.
@@ -16,11 +22,8 @@ A function description, a procedure, a recipe that explains how to obtain output
 Possible computing operations on the reference model of computation:
 
 * Integer aritmethic
-
 * logic operations
-
 * bitwise operations
-
 * Read and write from a memory address in constant time (Word-RAM)
 
 A CPU takes a constant ammount of time to operate on a constant amount of memory. Operate over a linear ammount of memory takes a linear ammount of time.
