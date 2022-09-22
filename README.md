@@ -55,6 +55,7 @@ Data Structure
 Care about a particular order
 Operations: build, len, iterate, get, set
 
+## 3. Sets and Sorting
 
 ### Set
 Care a bout element value
