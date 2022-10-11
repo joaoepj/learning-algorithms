@@ -5,7 +5,7 @@ Some notes about the [MIT 6.006 Introduction to Algorithms, Spring 2020](https:/
 
 ## 1. Algorithms and Computation
 
-Goals:
+### Goals:
 1. Solve computational problems
 2. Prove correctness
 3. Argue efficiency
@@ -18,6 +18,30 @@ Given a set of inputs and a set of outputs. A predicate/statement that allow us 
 ### What is an algorithm?
 
 A function description, a procedure, a recipe that explains how to obtain output from input, how input relates to output.
+
+### The Birthday Problem
+
+In a classroom, there are any pair of students with same birth date?
+
+#### Proposed Algorithm:
+- Add a student's birthday to a record
+- Inform if a birthday pair exist in the record
+- Repeat until there are no more students to add
+
+#### Algorithm's properties:
+- Correctness
+
+Inductive Hypothesis
+
+
+- Efficiency
+
+Don't measure time, cause it depends on the power of computer. Instead, measure quantity of operations
+- O() upper bound
+- $\Omega()$ lower bound
+- $\Theta()$ both
+
+### Computation
 
 Possible computing operations on the reference model of computation:
 
