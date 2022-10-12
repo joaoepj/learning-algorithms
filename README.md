@@ -13,7 +13,7 @@ Some notes about the [MIT 6.006 Introduction to Algorithms, Spring 2020](https:/
 
 ### What is a problem?
 
-Given a set of inputs and a set of outputs. A predicate/statement that allow us to confirm that some relation between input and output holds.
+A binary relation. A set of inputs and outputs. A predicate/statement that allow us to confirm that some relation between input and output holds.
 
 ### What is an algorithm?
 
@@ -31,15 +31,26 @@ In a classroom, there are any pair of students with same birth date?
 #### Algorithm's properties:
 - Correctness
 
-Inductive Hypothesis
+Inductive Hypothesis:
 
+if the first $k$ students contain a math
+  
+  the algorithm returns it before interviewing student $k+1$
+
+Base case: $k = 0$
 
 - Efficiency
 
 Don't measure time, cause it depends on the power of computer. Instead, measure quantity of operations
-- O() upper bound
+
+Asymptotic (relative to problem input size) notation
+- $O()$ upper bound
 - $\Omega()$ lower bound
 - $\Theta()$ both
+
+$\Theta(1) \lt \Theta(\log{n}) \lt \Theta(n) \lt \Theta(n\log{n}) \lt \Theta(n^{2}) \lt \Theta(n^{c}) \lt 2^{\Theta(n^{c})}$
+
+Note: $2^{\Theta(n^{c})}$, which I clearly do not understand
 
 ### Computation
 
@@ -54,10 +65,15 @@ A CPU takes a constant amount of time to operate on a constant amount of memory.
 
 Data structures are ways of storing non-constant amount and make operations over them faster.
 
-Strategies to solve a problem.
+#### Strategies to solve a problem.
 
 1. Reduce it to a known algorithm
 2. Design your own (recursive) algorithm
+
+#### Asymptotics Exercises
+
+3. Can't see how to reach answer with logarithmic operations
+4. Why? Needs explanation (valid for all lacking mathematical background)
 
 ## 2. Data Structures and Dynamic Arrays
 
