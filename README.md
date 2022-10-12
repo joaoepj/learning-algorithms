@@ -19,7 +19,7 @@ A binary relation. A set of inputs and outputs. A predicate/statement that allow
 
 A function description, a procedure, a recipe that explains how to obtain output from input, how input relates to output.
 
-### The Birthday Problem
+### The Birthday Match Problem
 
 In a classroom, there are any pair of students with same birth date?
 
@@ -51,6 +51,10 @@ Asymptotic (relative to problem input size) notation
 $\Theta(1) \lt \Theta(\log{n}) \lt \Theta(n) \lt \Theta(n\log{n}) \lt \Theta(n^{2}) \lt \Theta(n^{c}) \lt 2^{\Theta(n^{c})}$
 
 Note: $2^{\Theta(n^{c})}$, which I clearly do not understand
+
+#### Code in go?
+
+#### Explained Run time Analisys?
 
 ### Computation
 
