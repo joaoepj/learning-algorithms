@@ -1,6 +1,6 @@
 # learning-algorithms
 
-Some notes about the [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
+Some notes about the course [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
 
 
 ## 1. Algorithms and Computation
@@ -63,9 +63,12 @@ Possible computing operations on the reference model of computation:
 * Integer aritmethic
 * logic operations
 * bitwise operations
-* Read and write from a memory address in constant time (Word-RAM)
+* Read and write from an arbitrary  memory address in constant time (Word-RAM)
 
-A CPU takes a constant amount of time to operate on a constant amount of memory. Operate over a linear amount of memory takes a linear amount of time.
+A CPU takes a constant amount of time to operate on a constant amount of memory.
+
+Operate over a linear amount of memory takes a linear amount of time.
+
 
 Data structures are ways of storing non-constant amount and make operations over them faster.
 
@@ -83,23 +86,44 @@ Data structures are ways of storing non-constant amount and make operations over
 
 ### Interface versus  Data Structure
 
-
-Interface (API/ADT)
+#### Interface (API/ADT)
 * Specification
 * What data can stored
 * Which operations are supported
 
-Data Structure
+#### Data Structure
 * Representation
 * How data is stored
 * Algorithms supporting operations
 
+### Interfaces
 
-### Sequence
-Care about a particular order
-Operations: build, len, iterate, get, set
+#### Sequence
+* Characterized by an extrinsic (external) order, defined by who provided the data
+* Operations: build, len, iterate, get_at, set_at
+
+#### Set
+* Characterized by an intrinsic (internal) order, usually a unique key.
+* Operations: build, len, iterate, find
+
+### Data Structures
+* Static Array
+* Linked List
+* Dynamic Array
+
+### Implementations
+
+Notice that none of these implementations support insert_at, delete_at operations in sub-linear time.
+ 
+#### Array Sequence
+
+The memory of our computer is a big fixed-lenght array that allows implement get_at() and 
+set_at() in $O(1)$ time because it can read and write any memory addres in constant time.
+
+delete_at() and insert_at() implementation takes inear-time $O(n)$ as it requires moving data and resizing the array.
+
+* Linked List Sequence
+* Dynamic Array Sequence
 
 ## 3. Sets and Sorting
 
-### Set
-Care a bout element value
