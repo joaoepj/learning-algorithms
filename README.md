@@ -127,3 +127,20 @@ delete_at() and insert_at() implementation takes inear-time $O(n)$ as it require
 
 ## 3. Sets and Sorting
 
+The Set interface can be simulated using a Sequence interface, but this results in poor performance
+
+One of the simplest ways to get a faster Set is to store our items in a sorted array
+
+Then we can simply binary search to find keys and support Order operations
+
+This is still not great for dynamic operations (items still need to be shifted when inserting or removing from the middle
+of the array), but finding items by their key is much faster!
+
+### Sorting
+
+#### Selection
+#### Insertion
+#### Merge
+
+## 4. Hashing
+## 5. Linear Sorting
