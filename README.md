@@ -154,3 +154,4 @@ func main() {
   fmt.Println("Goodbye Computer Science!")
 }
 ```
+Citing [code](https://github.com/joaoepj/learning-go/blob/920ed16eee500da9d2f2f6a3e5d5f9d494ef3365/lg_misc/recursive.go)
