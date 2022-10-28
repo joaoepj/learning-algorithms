@@ -144,3 +144,13 @@ of the array), but finding items by their key is much faster!
 
 ## 4. Hashing
 ## 5. Linear Sorting
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("Goodbye Computer Science!")
+}
+```
