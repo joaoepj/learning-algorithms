@@ -141,6 +141,7 @@ of the array), but finding items by their key is much faster!
 #### Selection
 #### Insertion
 #### Merge
+#### Recurrences
 
 ## 4. Hashing
 ## 5. Linear Sorting
