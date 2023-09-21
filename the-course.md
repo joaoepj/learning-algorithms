@@ -140,6 +140,21 @@ of the array), but finding items by their key is much faster!
 
 ### Sorting
 
+
+#### Insertion
+```go
+func InsertionSort(a []int32) []int32 {
+	for i, _ := range a[0:] {
+		j := i
+		for j > 0 && a[j] < a[j-1] {
+			a[j-1], a[j] = a[j], a[j-1]
+			j = j - 1
+		}
+	}
+	return a
+}
+```
+
 #### Selection
 ```go
 func SelectionSort(a []int32) []int32 {
@@ -168,8 +183,36 @@ func SelectionSort(a []int32) []int32 {
 	return a
 }
 ```
-#### Insertion
 #### Merge
+```go
+func MergeSort(a []int32) []int32 {
+	// stop condition
+	if len(a) < 2 {
+		return a
+	}
+	l := MergeSort(a[:len(a)/2])
+	r := MergeSort(a[len(a)/2:])
+	merged := []int32{}
+	i, j := 0, 0
+	for i < len(l) && j < len(r) {
+		if l[i] < r[j] {
+			merged = append(merged, l[i])
+			i++
+		} else {
+			merged = append(merged, r[j])
+			j++
+		}
+	}
+	for ; i < len(l); i++ {
+		merged = append(merged, l[i])
+	}
+	for ; j < len(r); j++ {
+		merged = append(merged, r[j])
+	}
+	return merged
+}
+```
+
 ### Recurrences
 
 ## 4. Hashing
